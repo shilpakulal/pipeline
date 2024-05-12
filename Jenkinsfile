@@ -6,12 +6,12 @@ pipeline{
     echo "This is Build stage"
     }
   }
-    stages('TEST') {
+    stage('TEST') {
       steps{
         echo "This is Test stage"
       }
     }
-    stages('DEPLOY') {
+    stage('DEPLOY') {
       steps{
         echo "This is Deploy stage"
       }
