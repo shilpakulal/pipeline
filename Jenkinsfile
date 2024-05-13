@@ -2,7 +2,7 @@ pipeline{
  agent none
   stages{
   stage('BUILD') {
-   agebt any
+   agent any
     steps{
     echo "This is Build stage"
       sh 'sleep 5'
