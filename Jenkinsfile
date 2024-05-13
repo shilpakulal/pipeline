@@ -18,7 +18,7 @@ pipeline{
         sh 'sleep 5; exit 1'
       }
       }
-      tage ('TEST ON SAFARI') {
+      stage ('TEST ON SAFARI') {
       steps{
         echo "This is Test on Safari Browser "
         sh 'sleep 5; exit 1'
