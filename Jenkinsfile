@@ -20,7 +20,7 @@ pipeline{
       }
       tage ('TEST ON SAFARI') {
       steps{
-        echo "This is Test on Safari Browser " "
+        echo "This is Test on Safari Browser "
         sh 'sleep 5; exit 1'
       }
       }
