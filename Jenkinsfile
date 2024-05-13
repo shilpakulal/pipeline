@@ -15,13 +15,13 @@ pipeline{
       stage ('TEST ON CHORME') {
       steps{
         echo "This is Test on Chrome Browser "
-        sh 'sleep 5; exit 1'
+        sh 'sleep 5'
       }
       }
       stage ('TEST ON SAFARI') {
       steps{
         echo "This is Test on Safari Browser "
-        sh 'sleep 5; exit 1'
+        sh 'sleep 5'
       }
       }
       }
