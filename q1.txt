@@ -44,7 +44,7 @@ pipeline{
 							sh 'sleep 5'
 							}
 						}
-						tage ('Server 4'){
+						stage ('Server 4'){
 						steps{
 							echo " this is for server 4"
 							sh 'sleep 5'
