@@ -1,22 +1,21 @@
 pipeline{
 	agent any
 		stages{
-			stage('BUILD'){
+			stage('BUILD') {
 				steps{
 				echo " this is the build stage"
 				sh 'sleep 5'
-				exit 0
 				}
 			}
 			stage ('TEST PARALLEL'){
 			parallel{
-				stage ('TEST on chrome'){
+				stage ('TEST on chrome') {
 					steps {
 						echo " this is test on chrome browser"
 						sh 'sleep 5'
 						}
 					}
-				stage ('TEST on safari'){
+				stage ('TEST on safari') {
 					steps {
 						echo " this is test on safari browser"
 						sh 'sleep 5'
@@ -26,25 +25,25 @@ pipeline{
 			}
 			stage('DEPLOY'){
 					parallel{
-						stage ('Server 1'){
+						stage ('Server 1') {
 						steps{
 							echo " this is deploy to server 1"
 							sh 'sleep 5'
 							}
 						}
-						stage ('Server 2'){
+						stage ('Server 2') {
 						steps{
 							echo " this is deploy to server 2"
 							sh 'sleep 5'
 							}
 						}
-						stage ('Server 3'){
+						stage ('Server 3') {
 						steps{
 							echo " this is deploy to server 3"
 							sh 'sleep 5'
 							}
 						}
-						stage ('Server 4'){
+						stage ('Server 4') {
 						steps{
 							echo " this is deploy to server 4"
 							sh 'sleep 5'
