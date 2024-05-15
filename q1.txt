@@ -28,25 +28,25 @@ pipeline{
 					parallel{
 						stage ('Server 1'){
 						steps{
-							echo " this is for server 1"
+							echo " this is deploy to server 1"
 							sh 'sleep 5'
 							}
 						}
 						stage ('Server 2'){
 						steps{
-							echo " this is for server 2"
+							echo " this is deploy to server 2"
 							sh 'sleep 5'
 							}
 						}
 						stage ('Server 3'){
 						steps{
-							echo " this is for server 3"
+							echo " this is deploy to server 3"
 							sh 'sleep 5'
 							}
 						}
 						stage ('Server 4'){
 						steps{
-							echo " this is for server 4"
+							echo " this is deploy to server 4"
 							sh 'sleep 5'
 							}
 						}
